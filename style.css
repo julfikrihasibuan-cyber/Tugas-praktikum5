@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px 20px;
+    background-color: green;
+}
+
+#container {
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.box {
+    float: left;
+    margin: 0px;
+    width: 154px;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.box img {
+    width: 100%;
+    height: 175px;
+}
+
+.yellow {
+    background-color: cyan;
+}
+
+.red {
+    background-color: yellow;
+}
+
+.green {
+    background-color: red;
+}
+
+.blue {
+    background-color: purple;
+}

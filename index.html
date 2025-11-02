@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssbox2.html</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Layout utama */
+    .layout {
+      width: 850px;
+      margin: 40px auto;
+      border: 3px solid black;
+      padding: 15px;
+      background-color: white;
+    }
+
+    /* Bar atas seperti browser */
+    .browser {
+      width: 800px;
+      margin: 0 auto 15px auto;
+      border: 2px solid black;
+      border-collapse: collapse;
+      background-color: #e0e0e0;
+    }
+
+    .browser td {
+      border: 2px solid black;
+      padding: 8px;
+    }
+
+    .logo {
+      width: 120px;
+      background-color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .address-bar {
+      background-color: white;
+      text-align: left;
+      padding-left: 10px;
+      font-family: monospace;
+    }
+
+    /* Tabel utama box model */
+    .boxmodel {
+      width: 800px;
+      margin: 0 auto;
+      border: 2px solid black;
+      border-collapse: separate;
+      border-spacing: 10px;
+      background-color: white;
+    }
+
+    .boxmodel td {
+      border: 2px solid black;
+      vertical-align: top;
+      padding: 5px;
+    }
+
+    /* Header hijau */
+    .header {
+      background-color: lightgreen;
+      height: 80px;
+      border: 2px solid black;
+    }
+
+    /* Kolom kiri (dua kotak kuning sejajar dengan kanan) */
+    .kiri {
+      width: 200px;
+    }
+
+    .box-kiri {
+      background-color: yellow;
+      height: 150px; /* sejajar dengan kanan */
+      border: 2px solid black;
+      margin-bottom: 10px;
+    }
+
+    /* Kolom kanan (dua kotak besar: oranye & biru) */
+    .kanan {
+      width: 580px;
+    }
+
+    .box-kanan1 {
+      background-color: orange;
+      height: 150px;
+      border: 2px solid black;
+      margin-bottom: 10px;
+    }
+
+    .box-kanan2 {
+      background-color: deepskyblue;
+      height: 150px;
+      border: 2px solid black;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Layout utama -->
+  <div class="layout">
+    <h2>Layout CSS Box Model</h2>
+
+    <!-- Tabel atas mirip browser -->
+    <table class="browser">
+      <tr>
+        <td class="logo">Moqzila</td>
+        <td class="address-bar">http://box1b.com</td>
+      </tr>
+    </table>
+
+    <!-- Tabel utama box model -->
+    <table class="boxmodel">
+      <!-- Baris header hijau -->
+      <tr>
+        <td colspan="2" class="header"></td>
+      </tr>
+
+      <!-- Baris isi (kolom kiri dan kanan) -->
+      <tr>
+        <td class="kiri">
+          <div class="box-kiri"></div>
+          <div class="box-kiri"></div>
+        </td>
+        <td class="kanan">
+          <div class="box-kanan1"></div>
+          <div class="box-kanan2"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
